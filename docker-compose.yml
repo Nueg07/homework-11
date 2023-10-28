@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    depends_on:
+      - pgsqldb
+  pgsqldb:
+    image: postgres:12
+    environment:
+      POSTGRES_DB
+      POSTGRES_USER
+      POSTGRES_PASSWORD
