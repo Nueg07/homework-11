@@ -9,8 +9,8 @@ services:
     env_file:
       - .env
     depends_on:
-      - pgsqldb
-  pgsqldb:
+      - pg
+  pg:
     image: postgres:12
     environment:
       POSTGRES_DB

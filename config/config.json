@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "myuser",
-    "password": "mypassword",
-    "database": "develovment",
-    "host": "127.0.0.1",
+    "username": "user",
+    "password": "password",
+    "database": "todoapi",
+    "host": "pgsqldb",
     "dialect": "postgres"
   },
   "test": {

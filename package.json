@@ -4,5 +4,12 @@
     "pg": "^8.11.3",
     "sequelize": "^6.33.0",
     "sequelize-cli": "^6.6.1"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
   }
 }
