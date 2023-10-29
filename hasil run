@@ -1,0 +1,28 @@
+2023-10-29 13:54:36 /bin/sh: 1: [: npm,: unexpected operator
+2023-10-29 13:55:04 /bin/sh: 1: [: npm,: unexpected operator
+
+PS C:\Users\user\Documents\Folder N\homework11> docker build -t nama_image:tag .
+>>
+[+] Building 0.9s (8/8) FINISHED                                                                                                                                                                                                                                     docker:default
+ => [internal] load .dockerignore                                                                                                                                                                                                                                              0.1s
+ => => transferring context: 2B                                                                                                                                                                                                                                                0.0s 
+ => [internal] load build definition from dockerfile                                                                                                                                                                                                                           0.1s 
+ => => transferring dockerfile: 140B                                                                                                                                                                                                                                           0.0s 
+ => [internal] load metadata for docker.io/library/node:20.9.0-slim                                                                                                                                                                                                            0.0s 
+ => [1/3] FROM docker.io/library/node:20.9.0-slim                                                                                                                                                                                                                              0.1s 
+ => [internal] load build context                                                                                                                                                                                                                                              0.5s 
+ => => transferring context: 87.60kB                                                                                                                                                                                                                                           0.4s 
+ => [2/3] WORKDIR /app                                                                                                                                                                                                                                                         0.1s 
+ => [3/3] COPY package*.json ./                                                                                                                                                                                                                                                0.1s 
+ => exporting to image                                                                                                                                                                                                                                                         0.1s 
+ => => exporting layers                                                                                                                                                                                                                                                        0.1s 
+ => => writing image sha256:09f0b1c7d313b7410b76e8513a862952f9725a7e7c095c896736bbc99397a50b                                                                                                                                                                                   0.0s 
+ => => naming to docker.io/library/nama_image:tag                                                                                                                                                                                                                              0.0s 
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS C:\Users\user\Documents\Folder N\homework11> docker run -p 8080:8080 nama_image:tag
+>>
+/bin/sh: 1: [: npm,: unexpected operator
+PS C:\Users\user\Documents\Folder N\homework11> docker run -p 8080:8080 nama_image:tag
+>>
