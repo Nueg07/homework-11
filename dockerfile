@@ -1,9 +1,9 @@
 FROM node:20.9.0-slim
 
-WORKDIR /index
+WORKDIR /app
 
 COPY package*.json ./
 
 EXPOSE 3000
 
-CMD [ 'npm', 'run' 'start-docker']
+CMD [ 'npm', 'start' ]
